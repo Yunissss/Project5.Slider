@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Slider" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Valid Filter Word" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S6A-EV-DF2">
+                                <rect key="frame" x="119" y="59" width="154" height="38"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="38" id="b2I-bF-lai"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="All" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oj2-YD-4xz">
+                                <rect key="frame" x="138" y="127" width="117" height="51"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="51" id="Ahk-DN-Ve6"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Money" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R6I-z5-E9q">
+                                <rect key="frame" x="16" y="767" width="83" height="51"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="83" id="6UX-Ym-j1U"/>
+                                    <constraint firstAttribute="height" constant="51" id="XA6-we-c21"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gold" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mHw-2y-ZTB">
+                                <rect key="frame" x="294" y="767" width="83" height="51"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="All" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vlr-0d-6DU">
+                                <rect key="frame" x="155" y="767" width="83" height="51"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="goldAndMoney" translatesAutoresizingMaskIntoConstraints="NO" id="WJO-KB-SRT">
+                                <rect key="frame" x="0.0" y="264" width="393" height="324"/>
+                            </imageView>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="5" minValue="0.0" maxValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="Gdc-UA-oAr">
+                                <rect key="frame" x="14" y="730" width="365" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="29" id="JOu-Zb-zFx"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="sliderValueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="mY1-wy-dKd"/>
+                                </connections>
+                            </slider>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="WJO-KB-SRT" firstAttribute="top" secondItem="oj2-YD-4xz" secondAttribute="bottom" constant="86" id="08B-8C-Ao0"/>
+                            <constraint firstItem="Gdc-UA-oAr" firstAttribute="centerX" secondItem="Vlr-0d-6DU" secondAttribute="centerX" id="0jf-Vt-bY5"/>
+                            <constraint firstItem="oj2-YD-4xz" firstAttribute="centerX" secondItem="WJO-KB-SRT" secondAttribute="centerX" id="25l-T3-J6W"/>
+                            <constraint firstItem="R6I-z5-E9q" firstAttribute="baseline" secondItem="Vlr-0d-6DU" secondAttribute="baseline" id="2TF-o8-lmZ"/>
+                            <constraint firstItem="oj2-YD-4xz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="138" id="3IO-wE-uJk"/>
+                            <constraint firstItem="Vlr-0d-6DU" firstAttribute="baseline" secondItem="mHw-2y-ZTB" secondAttribute="baseline" id="52K-HH-Gmc"/>
+                            <constraint firstItem="R6I-z5-E9q" firstAttribute="firstBaseline" secondItem="Vlr-0d-6DU" secondAttribute="firstBaseline" id="5pT-qX-PVg"/>
+                            <constraint firstItem="Gdc-UA-oAr" firstAttribute="leading" secondItem="R6I-z5-E9q" secondAttribute="leading" id="7ng-E0-kvR"/>
+                            <constraint firstItem="R6I-z5-E9q" firstAttribute="top" secondItem="Gdc-UA-oAr" secondAttribute="bottom" constant="8" id="9ZA-yz-oY0"/>
+                            <constraint firstItem="Vlr-0d-6DU" firstAttribute="leading" secondItem="R6I-z5-E9q" secondAttribute="trailing" constant="56" id="9uc-ei-pws"/>
+                            <constraint firstItem="WJO-KB-SRT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="BKS-BF-mED"/>
+                            <constraint firstItem="oj2-YD-4xz" firstAttribute="top" secondItem="S6A-EV-DF2" secondAttribute="bottom" constant="30" id="BaM-jA-PnE"/>
+                            <constraint firstItem="mHw-2y-ZTB" firstAttribute="leading" secondItem="Vlr-0d-6DU" secondAttribute="trailing" constant="56" id="BaR-7X-ZJe"/>
+                            <constraint firstItem="R6I-z5-E9q" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="GOa-xx-ddD"/>
+                            <constraint firstItem="Gdc-UA-oAr" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="VPH-7E-XZy"/>
+                            <constraint firstItem="Gdc-UA-oAr" firstAttribute="trailing" secondItem="mHw-2y-ZTB" secondAttribute="trailing" id="Vxh-Go-tmr"/>
+                            <constraint firstItem="S6A-EV-DF2" firstAttribute="centerX" secondItem="oj2-YD-4xz" secondAttribute="centerX" id="Xp6-SL-Tuw"/>
+                            <constraint firstItem="S6A-EV-DF2" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="cCP-tV-8xr"/>
+                            <constraint firstItem="Vlr-0d-6DU" firstAttribute="firstBaseline" secondItem="mHw-2y-ZTB" secondAttribute="firstBaseline" id="fLq-lD-YeM"/>
+                            <constraint firstItem="S6A-EV-DF2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="119" id="nRF-To-Nb4"/>
+                            <constraint firstItem="WJO-KB-SRT" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="ovo-KU-r16"/>
+                            <constraint firstItem="WJO-KB-SRT" firstAttribute="centerX" secondItem="Gdc-UA-oAr" secondAttribute="centerX" id="q4A-hm-3Yx"/>
+                            <constraint firstItem="Gdc-UA-oAr" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="zkN-6J-4CH"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imgResult" destination="WJO-KB-SRT" id="o86-hT-GWR"/>
+                        <outlet property="lblValidFilter" destination="oj2-YD-4xz" id="fW1-Yz-kSg"/>
+                        <outlet property="slider" destination="Gdc-UA-oAr" id="hlD-ay-DgX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="130.53435114503816" y="-27.464788732394368"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="goldAndMoney" width="959" height="640"/>
+    </resources>
+</document>
